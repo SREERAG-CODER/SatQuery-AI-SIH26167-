@@ -9,7 +9,7 @@ stage — not the full production system.
 
 ## Phase 0 — Setup (Day 0)
 
-- [ ] Create a project repo (GitHub), with folders: `data/`, `preprocessing/`,
+- [x] Create a project repo (GitHub), with folders: `data/`, `preprocessing/`,
       `change_detection/`, `backend/`, `frontend/`
 - [ ] Set up a Python virtual environment; install `numpy`, `rasterio` or `GDAL`,
       `opencv-python`, `scikit-image`, `matplotlib`

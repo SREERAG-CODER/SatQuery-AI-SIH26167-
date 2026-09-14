@@ -11,25 +11,25 @@ stage — not the full production system.
 
 - [x] Create a project repo (GitHub), with folders: `data/`, `preprocessing/`,
       `change_detection/`, `backend/`, `frontend/`
-- [ ] Set up a Python virtual environment; install `numpy`, `rasterio` or `GDAL`,
+- [x] Set up a Python virtual environment; install `numpy`, `rasterio` or `GDAL`,
       `opencv-python`, `scikit-image`, `matplotlib`
-- [ ] Install `fastapi`, `uvicorn` for the backend
-- [ ] Confirm Node/Next.js setup for the frontend
-- [ ] Decide on LLM access: an API (OpenAI/Anthropic/etc.) or a local model —
+- [x] Install `fastapi`, `uvicorn` for the backend
+- [x] Confirm Node/Next.js setup for the frontend
+- [x] Decide on LLM access: an API (OpenAI/Anthropic/etc.) or a local model —
       pick whichever you already have credentials/infra for, don't add a new
       dependency mid-project
 
 ## Phase 1 — Get SAR Data (Day 0–1)
 
-- [ ] Create a free Copernicus Open Access Hub / Alaska Satellite Facility (ASF)
+- [x] Create a free Copernicus Open Access Hub / Alaska Satellite Facility (ASF)
       account — both distribute Sentinel-1 SAR imagery at no cost
-- [ ] Pick ONE small, well-known area with a clear before/after change (a flood
+- [x] Pick ONE small, well-known area with a clear before/after change (a flood
       event, a reservoir filling/draining, urban construction) — search
       "Sentinel-1 flood example" or similar to find a documented case, so you
       have ground truth to sanity-check against
-- [ ] Download two Sentinel-1 SAR scenes of that area: one "before," one
+- [x] Download two Sentinel-1 SAR scenes of that area: one "before," one
       "after" the change event
-- [ ] (Optional, if time allows) Download a matching optical image (Sentinel-2)
+- [x] (Optional, if time allows) Download a matching optical image (Sentinel-2)
       of the same area/dates for a nicer visual, not required for the core logic
 
 ## Phase 2 — SAR Preprocessing (Day 1–2)

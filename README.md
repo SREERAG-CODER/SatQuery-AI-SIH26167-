@@ -36,17 +36,17 @@ stage — not the full production system.
 
 This is the part with a learning curve — budget real time here.
 
-- [ ] Read up on the basics: SAR images store *backscatter intensity*, not
+- [x] Read up on the basics: SAR images store *backscatter intensity*, not
       color; they need calibration and speckle-noise filtering before use
-- [ ] Apply radiometric calibration to both scenes (tools: ESA's SNAP software,
+- [x] Apply radiometric calibration to both scenes (tools: ESA's SNAP software,
       or Python libraries like `snappy`/`pyroSAR` — SNAP's GUI is the easier
       on-ramp if this is your first time touching SAR)
-- [ ] Apply a speckle filter (e.g., Lee filter or median filter) to reduce
+- [x] Apply a speckle filter (e.g., Lee filter or median filter) to reduce
       SAR's characteristic grainy noise
-- [ ] Co-register the two images so the same pixel in each corresponds to the
+- [x] Co-register the two images so the same pixel in each corresponds to the
       same real-world location (SNAP can do this, or manual reprojection with
       `rasterio`/`GDAL` if scenes are already geocoded)
-- [ ] Export both preprocessed scenes as aligned arrays/GeoTIFFs you can load
+- [x] Export both preprocessed scenes as aligned arrays/GeoTIFFs you can load
       in Python
 
 ## Phase 3 — Change Detection Baseline (Day 2–3)

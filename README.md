@@ -53,7 +53,7 @@ This is the part with a learning curve — budget real time here.
 
 Start with the simplest thing that works, then improve only if time remains.
 
-- [ ] **Baseline v1:** compute a pixel-wise difference image (or log-ratio
+- [x] **Baseline v1:** compute a pixel-wise difference image (or log-ratio
       image, which is more standard for SAR) between the two calibrated scenes
 - [ ] Apply a threshold to the difference image to flag "changed" vs
       "unchanged" pixels — start with a simple statistical threshold (e.g.,

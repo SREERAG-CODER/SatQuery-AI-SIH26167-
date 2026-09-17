@@ -1,0 +1,4 @@
+venv/
+*.tif
+*.tiff
+satquery-ai-roadmap.md

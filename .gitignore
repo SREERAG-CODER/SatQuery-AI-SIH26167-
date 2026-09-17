@@ -2,3 +2,5 @@ venv/
 *.tif
 *.tiff
 satquery-ai-roadmap.md
+data/BigEarthNet/*.parquet
+data/BigEarthNet/.cache/

@@ -1,19 +1,29 @@
-from image_processor.metadata import get_metadata
-from image_processor.validator import validate_metadata
 from image_processor.inspector import inspect_inputs
+from agent.router import route_query
+from specialists.registry import SPECIALISTS
 
-image_path = "../data/Before/kochi_before.tif"
+image_paths = ["data/Before/kochi_before.tif", "data/After/kochi_after_aligned.tif"]
 
-print("Available Metadata\n")
-metadata = get_metadata(image_path)
-print(metadata)
+query = "What changed between these two images?"
 
-print("Validation Check")
-validation = validate_metadata(metadata)
-print(validation)
+inspection = inspect_inputs(image_paths)
 
 print("Input Inspection")
-image_paths = ["../data/Before/kochi_before.tif"]
-inspection_result = inspect_inputs(image_paths)
-print(inspection_result)
+print(inspection)
 
+task = route_query(query, inspection["input_type"])
+
+print("Selected Task")
+print(task)
+
+if task in SPECIALISTS:
+    specialist = SPECIALISTS[task]
+
+    result = specialist(
+        image_paths[0],
+        image_paths[1],
+        "data/change_map.tif"
+    )
+
+    print("Specialist Result")
+    print(result)
